@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.tree:before {
+  content: ' ';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 8px;
+  margin: 0 8px;
+}
+.tree {
+  border-radius: 20px;
+  padding-right: 12px;
+  margin: -12px;
+  color: transparent;
+  line-height: 24px;
+  font-size: 13px;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.8);
+}
+.tree span {
+  color: #fff;
+  display: inline-block;
+}
+.tree:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+.tree:hover span {
+  display: inline-block;
+}
+.MuiChip-clickable {
+  margin: 0.1rem !important;
+}
+.MuiChip-clickable:focus-visible {
+  background-color: yellow !important;
+  color: green !important;
+}
