@@ -121,6 +121,10 @@ An [observable notebook](https://observablehq.com/d/fd239fea18f1c574) used to ex
 
 `package.json` is configured to build and deploy to github-pages by specifying the `homepage` property, either as the full page url, e.g. `https://joelondon.github.io/street-trees` or as a dot
 
+```sh
+npm run deploy
+```
+
 ##### apps.london.gov.uk
 
 To publish on `apps.london.gov.uk` simply commit the development work (i.e. js work in the `src` directory) and push to this repo's remote on that server - the `post-receive` git-hook will build the `public` directory and copy to the web root at `/street-trees`
