@@ -11,7 +11,11 @@
       "resolution": 300,
       "format": "png"
     },
-    "mapbox:sdk-support": {"js": "0.45.0", "android": "6.0.0", "ios": "4.0.0"},
+    "mapbox:sdk-support": {
+      "js": "0.45.0",
+      "android": "6.0.0",
+      "ios": "4.0.0"
+    },
     "mapbox:groups": {
       "95de6b6a9598813bfa2767abe8c13e6b": {
         "name": "Names Group",
@@ -32,7 +36,7 @@
   "zoom": 5.219501499997193,
   "bearing": 0,
   "pitch": 0,
-  "light": {"intensity": 0.2},
+  "light": { "intensity": 0.2 },
   "sources": {
     "composite": {
       "url": "https://s3-eu-west-1.amazonaws.com/tiles.os.uk/data/vector/open-zoomstack/config.json",
@@ -46,7 +50,7 @@
       "id": "background",
       "type": "background",
       "layout": {},
-      "paint": {"background-color": "#162639"}
+      "paint": { "background-color": "#162639" }
     },
     {
       "id": "sea",
@@ -54,7 +58,7 @@
       "source": "composite",
       "source-layer": "sea",
       "layout": {},
-      "paint": {"fill-color": "#041326"}
+      "paint": { "fill-color": "#041326" }
     },
     {
       "id": "foreshore",
@@ -63,7 +67,7 @@
       "source-layer": "foreshore",
       "minzoom": 5,
       "layout": {},
-      "paint": {"fill-color": "#0e1b29"}
+      "paint": { "fill-color": "#0e1b29" }
     },
     {
       "id": "national-parks",
@@ -75,7 +79,14 @@
       "layout": {},
       "paint": {
         "fill-color": "#163838",
-        "fill-opacity": {"base": 1, "stops": [[5, 0.7], [9, 0.5], [12, 0.1]]}
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [5, 0.7],
+            [9, 0.5],
+            [12, 0.1]
+          ]
+        }
       }
     },
     {
@@ -85,7 +96,7 @@
       "source-layer": "buildings",
       "minzoom": 5,
       "maxzoom": 11,
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "#1d3244",
         "fill-opacity": ["interpolate", ["linear"], ["zoom"], 5, 0.2, 11, 0.4]
@@ -98,7 +109,7 @@
       "source-layer": "sites",
       "minzoom": 5,
       "layout": {},
-      "paint": {"fill-color": "hsl(231, 46%, 14%)", "fill-opacity": 0.6}
+      "paint": { "fill-color": "hsl(231, 46%, 14%)", "fill-opacity": 0.6 }
     },
     {
       "id": "greenspaces",
@@ -106,7 +117,7 @@
       "source": "composite",
       "source-layer": "greenspaces",
       "minzoom": 5,
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "hsl(168, 45%, 15%)",
         "fill-outline-color": "#d1e7c3",
@@ -120,10 +131,16 @@
       "source": "composite",
       "source-layer": "woodland",
       "minzoom": 5,
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "#132f33",
-        "fill-opacity": {"base": 1, "stops": [[6, 0.3], [11, 1]]}
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [6, 0.3],
+            [11, 1]
+          ]
+        }
       }
     },
     {
@@ -134,7 +151,7 @@
       "minzoom": 5,
       "filter": ["in", "type", "Surface", "surface"],
       "layout": {},
-      "paint": {"line-color": "#041326"}
+      "paint": { "line-color": "#041326" }
     },
     {
       "id": "surfacewater",
@@ -143,7 +160,7 @@
       "source-layer": "surfacewater",
       "minzoom": 5,
       "layout": {},
-      "paint": {"fill-color": "#041326"}
+      "paint": { "fill-color": "#041326" }
     },
     {
       "id": "buildings",
@@ -152,17 +169,17 @@
       "source-layer": "buildings",
       "minzoom": 11,
       "layout": {},
-      "paint": {"fill-color": "#1d3244"}
+      "paint": { "fill-color": "#1d3244" }
     },
     {
       "id": "roads 0 Restricted Road",
       "type": "line",
-      "metadata": {"mapbox:group": "b70308493053f7bbb91b528ae2a71241"},
+      "metadata": { "mapbox:group": "b70308493053f7bbb91b528ae2a71241" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
       "filter": ["all", ["==", "level", "0"], ["==", "type", "Restricted"]],
-      "layout": {"line-join": "round", "visibility": "visible"},
+      "layout": { "line-join": "round", "visibility": "visible" },
       "paint": {
         "line-color": "rgba(29, 54, 69, 1)",
         "line-width": [
@@ -188,7 +205,7 @@
     {
       "id": "roads 0 Local Road",
       "type": "line",
-      "metadata": {"mapbox:group": "b70308493053f7bbb91b528ae2a71241"},
+      "metadata": { "mapbox:group": "b70308493053f7bbb91b528ae2a71241" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -222,7 +239,7 @@
     {
       "id": "roads 0 Minor Road",
       "type": "line",
-      "metadata": {"mapbox:group": "b70308493053f7bbb91b528ae2a71241"},
+      "metadata": { "mapbox:group": "b70308493053f7bbb91b528ae2a71241" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -256,7 +273,7 @@
     {
       "id": "roads 0 B Road",
       "type": "line",
-      "metadata": {"mapbox:group": "b70308493053f7bbb91b528ae2a71241"},
+      "metadata": { "mapbox:group": "b70308493053f7bbb91b528ae2a71241" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -290,7 +307,7 @@
     {
       "id": "roads 0 A Road",
       "type": "line",
-      "metadata": {"mapbox:group": "b70308493053f7bbb91b528ae2a71241"},
+      "metadata": { "mapbox:group": "b70308493053f7bbb91b528ae2a71241" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -324,7 +341,7 @@
     {
       "id": "roads 0 Primary",
       "type": "line",
-      "metadata": {"mapbox:group": "b70308493053f7bbb91b528ae2a71241"},
+      "metadata": { "mapbox:group": "b70308493053f7bbb91b528ae2a71241" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -358,7 +375,7 @@
     {
       "id": "roads 0 Motorway",
       "type": "line",
-      "metadata": {"mapbox:group": "b70308493053f7bbb91b528ae2a71241"},
+      "metadata": { "mapbox:group": "b70308493053f7bbb91b528ae2a71241" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -392,12 +409,12 @@
     {
       "id": "roads 1 Local Road case",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
       "filter": ["all", ["==", "level", "1"], ["==", "type", "Local"]],
-      "layout": {"line-join": "round", "visibility": "none"},
+      "layout": { "line-join": "round", "visibility": "none" },
       "paint": {
         "line-color": "rgba(29, 54, 69, 1)",
         "line-width": [
@@ -422,12 +439,12 @@
     {
       "id": "roads 1 Minor Road case",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
       "filter": ["all", ["==", "level", "1"], ["==", "type", "Minor"]],
-      "layout": {"line-join": "round", "visibility": "none"},
+      "layout": { "line-join": "round", "visibility": "none" },
       "paint": {
         "line-color": "#15273c",
         "line-width": [
@@ -452,12 +469,12 @@
     {
       "id": "roads 1 B Road case",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
       "filter": ["all", ["==", "level", "1"], ["==", "type", "B Road"]],
-      "layout": {"line-join": "round", "visibility": "none"},
+      "layout": { "line-join": "round", "visibility": "none" },
       "paint": {
         "line-color": "#15273c",
         "line-width": [
@@ -482,12 +499,12 @@
     {
       "id": "roads 1 A Road case",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
       "filter": ["all", ["==", "level", "1"], ["==", "type", "A Road"]],
-      "layout": {"line-join": "round", "visibility": "none"},
+      "layout": { "line-join": "round", "visibility": "none" },
       "paint": {
         "line-color": "#15273c",
         "line-width": [
@@ -512,12 +529,12 @@
     {
       "id": "roads 1 Primary case",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
       "filter": ["all", ["==", "level", "1"], ["==", "type", "Primary"]],
-      "layout": {"line-join": "round", "visibility": "none"},
+      "layout": { "line-join": "round", "visibility": "none" },
       "paint": {
         "line-color": "#15273c",
         "line-width": [
@@ -542,12 +559,12 @@
     {
       "id": "roads 1 Motorway case",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
       "filter": ["all", ["==", "level", "1"], ["==", "type", "Motorway"]],
-      "layout": {"line-join": "round", "visibility": "none"},
+      "layout": { "line-join": "round", "visibility": "none" },
       "paint": {
         "line-color": "#15273c",
         "line-width": [
@@ -572,12 +589,12 @@
     {
       "id": "roads 1 Restricted Road",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
       "filter": ["all", ["==", "level", "1"], ["==", "type", "Restricted"]],
-      "layout": {"line-join": "round", "visibility": "none"},
+      "layout": { "line-join": "round", "visibility": "none" },
       "paint": {
         "line-color": "#000000",
         "line-width": [
@@ -603,7 +620,7 @@
     {
       "id": "roads 1 Local Road",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -637,7 +654,7 @@
     {
       "id": "roads 1 Minor Road",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -671,7 +688,7 @@
     {
       "id": "roads 1 B Road",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -705,7 +722,7 @@
     {
       "id": "roads 1 A Road",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -739,7 +756,7 @@
     {
       "id": "roads 1 Primary",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -773,7 +790,7 @@
     {
       "id": "roads 1 Motorway",
       "type": "line",
-      "metadata": {"mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d"},
+      "metadata": { "mapbox:group": "544b2a8d8b4148c11cbdbcbf6ea8173d" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 5,
@@ -811,7 +828,7 @@
       "source-layer": "roads",
       "minzoom": 12,
       "filter": ["==", "level", "2"],
-      "layout": {"line-join": "round", "visibility": "none"},
+      "layout": { "line-join": "round", "visibility": "none" },
       "paint": {
         "line-color": "#15273c",
         "line-width": [
@@ -870,7 +887,7 @@
       "source": "composite",
       "source-layer": "rail",
       "minzoom": 5,
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "line-color": "#334857",
         "line-width": [
@@ -915,8 +932,8 @@
       "source": "composite",
       "source-layer": "boundaries",
       "minzoom": 5,
-      "layout": {"visibility": "none"},
-      "paint": {"line-width": 1, "line-color": "#3c4c58", "line-opacity": 1}
+      "layout": { "visibility": "none" },
+      "paint": { "line-width": 1, "line-color": "#3c4c58", "line-opacity": 1 }
     },
     {
       "id": "etl",
@@ -924,7 +941,7 @@
       "source": "composite",
       "source-layer": "etl",
       "minzoom": 15,
-      "layout": {"visibility": "none"},
+      "layout": { "visibility": "none" },
       "paint": {
         "line-dasharray": [10, 5],
         "line-color": "hsl(0, 32%, 27%)",
@@ -935,7 +952,7 @@
     {
       "id": "road numbers",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 10,
@@ -967,7 +984,7 @@
     {
       "id": "Primary road numbers",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 10,
@@ -999,7 +1016,7 @@
     {
       "id": "Motorway numbers",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 10,
@@ -1031,7 +1048,7 @@
     {
       "id": "road names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "roads",
       "minzoom": 10,
@@ -1057,13 +1074,21 @@
         "text-halo-color": "#000000",
         "text-halo-width": 1,
         "text-halo-blur": 1,
-        "text-color": "#688091"
+        "text-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          6,
+          "#688091",
+          10,
+          "#fff"
+        ]
       }
     },
     {
       "id": "Motorway Junctions",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 14,
@@ -1084,7 +1109,7 @@
     {
       "id": "Greenspace names-copy",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 13,
@@ -1106,7 +1131,7 @@
     {
       "id": "Sites names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 13,
@@ -1128,7 +1153,7 @@
     {
       "id": "Landform names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 5,
@@ -1149,7 +1174,7 @@
     {
       "id": "Landcover names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 5,
@@ -1170,7 +1195,7 @@
     {
       "id": "Water names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 5,
@@ -1191,7 +1216,7 @@
     {
       "id": "Woodland names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 5,
@@ -1212,7 +1237,7 @@
     {
       "id": "Small Settlement names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 5,
@@ -1233,7 +1258,7 @@
     {
       "id": "Suburban names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 12,
@@ -1256,7 +1281,7 @@
     {
       "id": "railwaystation names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "railwaystation",
       "minzoom": 5,
@@ -1314,7 +1339,7 @@
     {
       "id": "airport names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "airports",
       "minzoom": 5,
@@ -1340,7 +1365,7 @@
     {
       "id": "Village names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 5,
@@ -1361,7 +1386,7 @@
     {
       "id": "Town names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 5,
@@ -1382,7 +1407,7 @@
     {
       "id": "City names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 5,
@@ -1403,7 +1428,7 @@
     {
       "id": "National Park names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 5,
@@ -1427,7 +1452,7 @@
     {
       "id": "Capital City names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 5,
@@ -1449,7 +1474,7 @@
     {
       "id": "Country names",
       "type": "symbol",
-      "metadata": {"mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b"},
+      "metadata": { "mapbox:group": "95de6b6a9598813bfa2767abe8c13e6b" },
       "source": "composite",
       "source-layer": "names",
       "minzoom": 5,
