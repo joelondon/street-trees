@@ -169,10 +169,6 @@ We use the [dirt-postgres-http-api](https://apps.london.gov.uk/gitea/gla-intelli
 
 Dirt can also be used to serve tiles straight from postgis, removing the need for a tileserver, although storing data in .mbtiles`and serving them with`tileserver-gl-light` offers better performance
 
-#### API explorer
-
-https://maps.london.gov.uk/dirt/
-
 #### Total trees in London
 
 [https://maps.london.gov.uk/v1/query/core_london_street_trees_web_3857?columns=count(gla_tree_group)%2Cgla_tree_group&group=gla_tree_group](<https://maps.london.gov.uk/v1/query/core_london_street_trees_web_3857?columns=count(gla_tree_group)%2Cgla_tree_group&group=gla_tree_group>)
@@ -212,6 +208,7 @@ Assuming it has Lng/Lat values, a CSV can be converted into a SQLite database fo
 csvs-to-sqlite Borough_tree_list_2021 street-trees.db`
 datasette street-trees.db
 ```
+
 Once Datasette is running, you can browse the database on http://127.0.0.1:8001
 
 There is a demo version at https://apps.london.gov.uk/Borough_tree_list_2021
